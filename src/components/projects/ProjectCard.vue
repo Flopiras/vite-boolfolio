@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="card">
+    <div class="card my-3">
         <!-- header -->
         <div class="card-header">
             <h2>{{ project.title }}</h2>
