@@ -11,7 +11,7 @@ export default {
   data: () => ({ projects: [] }),
   methods: {
     fetchProjects() {
-      axios.get(endpoint).then(res => { console.log(res.data) })
+      axios.get(endpoint).then(res => { this.projects = res.data })
     }
   },
   created() {
