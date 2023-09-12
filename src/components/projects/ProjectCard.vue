@@ -7,7 +7,7 @@ export default {
             const abstract = this.project.content.slice(0, 200);
             return abstract + '...';
         }
-    }
+    },
 };
 </script>
 
@@ -23,7 +23,8 @@ export default {
         </div>
         <!-- footer -->
         <div class="card-footer">
-            <a :href="project.link">Link al progetto</a>
+            <router-link :to="{ name: 'project-detail', params: { id: project.id } }" class="btn btn-primary">Vedi
+            </router-link>
         </div>
     </div>
 </template>
