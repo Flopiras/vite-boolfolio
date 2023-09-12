@@ -33,5 +33,5 @@ export default {
     <ProjectsList :projects="projects.data" />
 
     <!-- pagination -->
-    <AppPagination :links="projects.links" />
+    <AppPagination :links="projects.links" @change-page="fetchProjects" />
 </template>
