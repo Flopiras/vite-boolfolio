@@ -12,7 +12,7 @@ export default {
 
   <main>
     <div class="container mt-4">
-      <RouteView />
+      <RouterView />
     </div>
   </main>
 </template>
