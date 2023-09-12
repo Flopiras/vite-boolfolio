@@ -1,7 +1,13 @@
 <script>
 export default {
     name: 'ProjectCard',
-    props: { project: Object }
+    props: { project: Object },
+    computed: {
+        abstract() {
+            const abstract = this.project.content.slice(0, 200);
+            return abstract + '...';
+        }
+    }
 };
 </script>
 
@@ -13,7 +19,7 @@ export default {
         </div>
         <!-- body -->
         <div class="card-body">
-            <p>{{ project.content }}</p>
+            <p>{{ abstract }}</p>
         </div>
         <!-- footer -->
         <div class="card-footer">
