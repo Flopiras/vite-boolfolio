@@ -12,7 +12,7 @@ export default {
         sendForm() {
             axios.post(endpoint, this.form)
                 .then(() => {
-                    this.form = emptyForm;
+                    this.form = { emptyForm };
                 })
         }
     }
