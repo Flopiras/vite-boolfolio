@@ -1,6 +1,6 @@
 <script>
 import axios from 'axios';
-
+const endpoint = 'http://127.0.0.1:8000/api/contact-message'
 const emptyForm = { email: '', subject: '', content: '' }
 
 export default {
@@ -10,7 +10,10 @@ export default {
     }),
     methods: {
         sendForm() {
-
+            axios.post(endpoint, this.form)
+                .then(() => {
+                    this.form = emptyForm;
+                })
         }
     }
 }
