@@ -9,11 +9,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <!-- home -->
                         <li class="nav-item">
                             <router-link class="nav-link active" aria-current="page"
                                 :to="{ name: 'home' }">Home</router-link>
                         </li>
-
+                        <!-- contacts -->
+                        <li class="nav-item">
+                            <router-link class="nav-link active" aria-current="page" :to="{ name: 'contacts' }">Contact
+                                Us</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
