@@ -1,7 +1,7 @@
 <script>
 import axios from 'axios';
-const endpoint = 'http://127.0.0.1:8000/api/contact-message'
-const emptyForm = { email: '', subject: '', content: '' }
+const endpoint = 'http://127.0.0.1:8000/api/contact-message/';
+const emptyForm = { email: '', subject: '', content: '' };
 
 export default {
     name: 'ContactsPage',
@@ -25,7 +25,7 @@ export default {
         <p class="mt-3 fs-5">Compila il form per mandare un messaggio all'autore dei progetti</p>
     </header>
     <!-- form -->
-    <form @submit.prevent="sendForm()" class="mt-5">
+    <form @submit.prevent="sendForm" class="mt-5">
         <!-- email -->
         <div class="mb-3">
             <label for="email" class="form-label">Indirizzo email</label>
